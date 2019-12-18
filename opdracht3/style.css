@@ -1,20 +1,62 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-p{
-    text-align: center;
-    margin: 1%;
-    font-size: 160%;
-}
-
-.main {
+#main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-row-gap: 8px;
-    grid-column-gap: 8px;
-    object-fit: cover;
+    grid-gap: 1em;
 }
-.img{
-    max-width: 100%;
+
+h1 {
+    grid-column: 1/3;
+    padding-left: 23cm;
+}
+.christmas0 {
+    grid-row: span 2;
+    width: 100%;
+    height: 100%;
+}
+.christmas1 {
+    width: 100%;
+    height: 100%;
+}
+.christmas2 {
+    width: 100%;
+}
+.christmas3 {
+    width: 100%;
+    height: 100%;
+}
+.christmas4 {
+    width: 100%;
+}
+.christmas5 {
+    width: 100%;
+}
+.christmas6 {
+    width: 100%;
+    height:100%;
+}
+.christmas7 {
+    width: 100%;
+    height:100%;
+}
+.christmas8 {
+    grid-row: span 2;
+    width: 100%;
+    height:100%;
+}
+.christmas9 {
+    width: 100%;
+    height:100%;
+}
+.christmas10 {
+    width: 100%;
+    height:100%;
+}
+p {
+    text-align: center;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.druk {
+    color: red;
+    font-size: 300%;
 }
