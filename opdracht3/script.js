@@ -1,21 +1,19 @@
-const afbeeldingen = [
-    /* 1 */ "https://cdn.pixabay.com/photo/2013/07/13/13/24/snow-160956__340.png", 
-    /* 2 */ "https://cdn.pixabay.com/photo/2019/12/10/19/39/new-years-eve-4686668__340.jpg",
-    /* 3 */ "https://cdn.pixabay.com/photo/2017/11/05/08/38/christmas-2919725__340.jpg",
-    /* 4 */ "https://cdn.pixabay.com/photo/2016/12/06/18/49/christmas-1887306__340.png",
-    /* 5 */ "https://cdn.pixabay.com/photo/2017/10/26/19/45/christmas-2892235__340.png", 
-    /* 6 */ "https://cdn.pixabay.com/photo/2016/12/06/03/09/christmas-1885470__340.png", 
-    /* 7 */ "https://cdn.pixabay.com/photo/2019/11/25/09/02/baking-4651363__340.jpg",
-    /* 8 */ "https://cdn.pixabay.com/photo/2010/12/13/10/34/santa-claus-2918__340.jpg",
-    /* 9 */ "https://cdn.pixabay.com/photo/2015/05/31/11/11/christmas-791110__340.jpg",
-    /* 10 */ "https://www.grandcafe-eemland.nl/wp-content/uploads/2018/10/kerstbijEemland.jpg",
+const kersturls = ["https://images.unsplash.com/photo-1482517716521-3120e5340ed3?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", 
+    "https://images.unsplash.com/photo-1480438701224-bd2d52edb029?ixlib=rb-1.2.1&auto=format&fit=crop&w=1355&q=80", 
+    "https://www.visitoslo.com/globalassets/bilder-oslo/hva-skjer/julemarked-nisse-didrick-stenersen.jpg?preset=Teaser",
+    "https://images.unsplash.com/photo-1461092678334-1aa3ab3543ce?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80", 
+    "https://images.unsplash.com/photo-1513505108218-1bd04056178c?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80", 
+    "https://images.unsplash.com/photo-1479740030693-66ad10f3a7b0?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80",
+    "https://images.unsplash.com/photo-1512389142860-9c449e58a543?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60", 
+    "https://images.unsplash.com/photo-1511268011861-691ed210aae8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
 ];
 
-for(i=0;i<afbeeldingen.length;i++){
-    if(afbeeldingen[i] === `https://cdn.pixabay.com/photo/2013/07/13/13/24/snow-160956__340.png`){
-        document.write(`<img src="${afbeeldingen[i]}" id="verticalSpan" width="100%" heigth="100%"`);
-    }else if(afbeeldingen[i] === `https://cdn.pixabay.com/photo/2016/12/06/03/09/christmas-1885470__340.png`) {
-    }else{
-        document.write(`<img src="${afbeeldingen[i]}">`);
-    }
+var parent    = document.getElementById('main');
+
+for (let i = 0; i < kersturls.length; i ++ ) {
+    let img = new Image();
+    img.src = kersturls[i];
+    img.alt = "leuk plaatje";
+    img.className = "kerstfoto" + i;
+    parent.appendChild(img);
 }
